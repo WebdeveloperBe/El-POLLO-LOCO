@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('./img/5_background/desert.png');
+    background-position: center;
+    font-family: 'zabras', Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    /* background-color: black; */
+    display: block;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.d-none{
+    display: none;
+}
+
+#startGame{
+    position : absolute;
+    top: 58%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    width: 720px;
+    height: 480px;
+    border: 1px solid black;
+}
+
+.startButton{
+    position : absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: unset;
+    background-color: #FFDA28;
+    z-index: 5;
+}
+
+#gameOver{
+    position : absolute;
+    top: 58%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    width: 720px;
+    height: 480px;
+}
+
+#youWin{
+    position : absolute;
+    top: 58%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    width: 720px;
+    height: 480px;
+}
+
+#mute{ position : absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+#unmute{ position : absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+@font-face {
+    font-family: 'zabras';
+    src: url('./fonts/zabars.ttf') format('truetype');
+}  
+
+/* Smartphones -------------*/
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+    }
+    #startGame {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Smartphones -------------*/
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+    }
+}
